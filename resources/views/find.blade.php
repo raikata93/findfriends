@@ -18,7 +18,7 @@ $appendData = [];
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach($friends as $friend)
+                                @foreach($friends->users as $friend)
                                     <tr>
                                         <td>{{$friend->real_name}}</td>
                                         <td>{{$friend->email}}</td>

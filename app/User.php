@@ -28,6 +28,6 @@ class User extends Authenticatable
     ];
 
     public function friends(){
-        return $this->hasMany('App\Friend');
+        return $this->hasMany('App\Friend','fr1','fr2');
     }
 }
