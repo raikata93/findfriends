@@ -18,10 +18,10 @@ $appendData = [];
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach($friends->users as $friend)
+                                @foreach($friends as $friend)
                                     <tr>
-                                        <td>{{$friend->real_name}}</td>
-                                        <td>{{$friend->email}}</td>
+                                        <td>{{$friend->user->real_name}}</td>
+                                        <td>{{$friend->user->email}}</td>
                                     </tr>
                                 @endforeach                                
                             </tbody>
